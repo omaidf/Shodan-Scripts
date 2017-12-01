@@ -16,7 +16,7 @@ def searchip(ip):
 
 		        """ % (item['port'], item['data'])
 
-ip2 = IP('8.18.111.0/24')
+ip2 = IP('') #add IP range here
 print
 for x in ip2:
 	print x

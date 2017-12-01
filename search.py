@@ -28,4 +28,4 @@ def searchorg(org):
 	except shodan.APIError, e:
 	        print 'Error: %s' % e
 
-searchorg('GAP Inc')
+searchorg('') #add org here
