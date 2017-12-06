@@ -6,6 +6,7 @@ config.read("./config.ini")
 apikey = config.get('shodan', 'apikey')
 api = shodan.Shodan(apikey)
 ignoredports = [80,443,8080,8081]
+#ignoring web ports because printing the banner is ugly
 
 def searchip(ip):
 	host = api.host(ip)
